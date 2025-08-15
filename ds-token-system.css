@@ -817,8 +817,8 @@ color-surface-action
 
 .button-primary-lg:active,
 .button-primary-md:active,
-.button-primary-sm:active, {
-    box-shadow: 0 0 0 var(--border-width-2xs) var(--color-border-active);   
+.button-primary-sm:active {
+    box-shadow: 0 0 0 var(--border-width-2xs) var(--color-border-secondary);   
    }
 
 /* button primary medium - use: d2l-text-label-sm*/
@@ -884,7 +884,7 @@ color-surface-action
 .button-secondary-md:active,
 .button-secondary-sm:active {
     background-color: var(--color-surface-action-secondary);
-    box-shadow: 0 0 0 var(--border-width-2xs) var(--color-border-secondary);   
+    box-shadow: 0 0 0 var(--border-width-2xs) var(--color-border-active);   
    }
 
 /* button secondary medium - use: d2l-text-label-sm*/
