@@ -9,4 +9,5 @@ If you want to make it your own, only change colour on foundation level.
 
 # TODO
 
-Add time colours
+Add time colours.
+Kamil says no!
