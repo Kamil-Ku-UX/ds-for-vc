@@ -503,6 +503,11 @@
     }
 }
 
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 /* Suatomic classes: text styles */
 
 /* Purpose:
@@ -780,17 +785,15 @@ A lightweight, small-text style for metadata, timestamps, footnotes, or subtle i
     background-color: var(--color-surface-highlight);
 }
 
-
+/* button primary element (all sizes) should get 2 more classes:
+color-surface-action
+.d2l-text-label-md (make sure the size is correct and alligned with button size !important!*/
 .gap-presentation {
     display: flex;
     gap: var(--gap-lg);
     align-items: center;
     margin-bottom: var(--margin-lg);
    }
-
-/* button primary element (all sizes) should get 2 more classes:
-color-surface-action
-.d2l-text-label-md (make sure the size is correct and alligned with button size !important!*/
 
 /*btn primary large - use:  d2l-text-label-md*/
 .button-primary-lg {
@@ -936,10 +939,32 @@ color-surface-action
 .button-text:focus,
 .button-text:focus-visible {
     background-color: var(--color-surface-tertiary);
-    box-shadow: 0 0 0 var(--border-width-2xs) var(--color-border-tertiary);   
+    box-shadow: 0 0 0 var(--border-width-2xs) var(--color-border-tertiary);
+    transition: box-shadow 0.12s ease;   
+   
 }
 
 .button-text:active {
     background-color: var(--color-surface-tertiary);
     box-shadow: 0 0 0 var(--border-width-2xs) var(--color-border-active);   
+}
+
+/* links (not buttons set as a link but link as references within a body of text - 
+use: d2l-text-body-sm (appropriate size to match the surrounding body text) or dont add any text class and it will be fine */
+
+.link{
+    color: var(--color-text-action);
+    text-decoration: var(--underline);
+    cursor: pointer;
+}
+
+.link:hover,
+.link:focus,
+.link:focus-visible{
+    background-color: var(--color-surface-highlight);
+    transition: box-shadow 0.12s ease;   
+}
+
+.link:active{
+color: var(--color-text-on-light-bg);
 }
