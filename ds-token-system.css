@@ -788,10 +788,17 @@ A lightweight, small-text style for metadata, timestamps, footnotes, or subtle i
 /* button primary element (all sizes) should get 2 more classes:
 color-surface-action
 .d2l-text-label-md (make sure the size is correct and alligned with button size !important!*/
-.gap-presentation {
+.gap-presentation-one {
     display: flex;
     gap: var(--gap-lg);
     align-items: center;
+    margin-bottom: var(--margin-lg);
+   }
+.gap-presentation-two {
+    display: flex;
+    gap: var(--gap-none);
+    flex-direction: column;
+    align-items: start;
     margin-bottom: var(--margin-lg);
    }
 
