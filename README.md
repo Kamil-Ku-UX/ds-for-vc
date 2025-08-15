@@ -6,3 +6,7 @@ it includes 3 tier token design for:
 - sizeing
 
 If you want to make it your own, only change colour on foundation level. 
+
+# TODO
+
+Add time colours
